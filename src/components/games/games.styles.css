@@ -1,0 +1,136 @@
+.games-wrapper{
+   background: url('/src/images/games-background.png') no-repeat center / cover rgba(0, 0, 0, 1);
+   width: 100%;
+}
+
+.games-container{
+   width: 1295px;
+   padding: 100px 0 60px;
+   margin: auto;
+}
+
+.games-carousel-block .image-background{
+   background: url('/src/images/background-rule.png') no-repeat center / cover;
+   height: 441px;
+   width: 688px;
+   position: relative;
+}
+
+.games-carousel-block img{
+   width: 608px;
+   height: 323px;
+   position: absolute;
+   top: 52px;
+   right: 12px;
+   transition: all 0.2s;
+}
+
+.games-wrapper button:nth-child(1){
+   background: url('/src/images/rule-one.png') no-repeat center / cover;
+   height: 100px;
+   width: 450px;
+}
+
+.games-wrapper button:nth-child(2){
+   background: url('/src/images/rule-two.png') no-repeat center / cover;
+   height: 100px;
+   width: 450px;
+}
+
+.games-wrapper button:nth-child(3){
+   background: url('/src/images/rule-three.png') no-repeat center / cover;
+   height: 100px;
+   width: 450px;
+}
+
+.games-wrapper button:nth-child(4){
+   background: url('/src/images/rule-four.png') no-repeat center / cover;
+   height: 100px;
+   width: 450px;
+}
+
+.games-wrapper button:nth-child(5){
+   background: url('/src/images/rule-five.png') no-repeat center / cover;
+   height: 100px;
+   width: 450px;
+}
+
+.games-wrapper button:nth-child(6){
+   background: url('/src/images/rule-six.png') no-repeat center / cover;
+   height: 100px;
+   width: 450px;
+}
+
+.games-wrapper button{
+   transition: all 0.2s;
+}
+
+.games-wrapper button.active{
+   transform: scale(1.15) !important;
+   transition: all 0.2s;
+}
+
+.carousel-control-next, .carousel-control-prev{
+   opacity: 1 !important;
+   top: auto;
+   bottom: 50px;
+   width: 5%;
+}
+
+.games-container .carousel-control-prev-icon{
+   background: url('/src/images/prev.png') no-repeat center / cover;
+   width: 39px;
+   height: 49px;
+   cursor: pointer;
+}
+
+.games-container .carousel-control-next-icon{
+   background: url('/src/images/next.png') no-repeat center / cover;
+   width: 39px;
+   height: 49px;
+   cursor: pointer;
+}
+
+.games-container .carousel-indicators{
+   margin-right: 5%;
+   margin-left: 5%;
+}
+
+.games-container .carousel-indicators [data-bs-target]{
+   opacity: 1;
+   margin: 0 10px;
+}
+
+.games-carousel-caption{
+   right: 0;
+   bottom: 0;
+   left: 0;
+   position: inherit;
+   width: 45%;
+   height: 100%;
+   margin: auto 30px !important;
+   text-align: left;
+   padding: 40px 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-fade .carousel-item {
+   transition-property: auto !important;
+}
+
+.games-carousel-caption p{
+   margin-bottom: 0;
+}
+
+.games-carousel-block{
+   display: flex !important;
+   justify-content: center;
+}
+
+.games-container .carousel-inner{
+   overflow: inherit;
+   height: 640px;
+}

@@ -1,0 +1,114 @@
+.event-wrapper {
+  width: 100%;
+}
+
+.event-container {
+  display: flex;
+  justify-content: space-between;
+  height: 900px;
+  position: relative;
+}
+
+.event-skew {
+  position: absolute;
+  z-index: 10;
+  width: 33.3333333333%;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform-origin: center center;
+  transform: translateX(-50%) skew(-10deg);
+  overflow: hidden;
+}
+
+.event-ladder {
+  background: url("/src/images/event-ladder.jpg") no-repeat center / cover;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  transition: all 0.2s;
+}
+
+.event-exclusive {
+  background: url("/src/images/event-exclusive.jpg") no-repeat center / cover;
+  transition: all 0.2s;
+  display: flex;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform-origin: center center;
+  transform: translateX(-50%) skew(10deg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-championship {
+  background: url("/src/images/event-championship.jpg") no-repeat center / cover;
+  width: 40%;
+  display: flex;
+  transition: all 0.2s;
+}
+
+.event-circle {
+  background: url("/src/images/circle.png") no-repeat center / cover;
+  height: 286px;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 280px;
+  margin: auto;
+}
+
+.event-triangle {
+  background: url("/src/images/triangle.png") no-repeat center / cover;
+  height: 286px;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 380px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.event-square {
+  background: url("/src/images/square.png") no-repeat center / cover;
+  height: 286px;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 295px;
+  margin: auto;
+}
+
+.event-championship:hover .event-square{
+   opacity: 0;
+   transition: all 0.2s;
+}
+
+.event-ladder:hover .event-circle{
+   opacity: 0;
+   transition: all 0.2s;
+}
+
+.event-exclusive:hover .event-triangle{
+   opacity: 0;
+   transition: all 0.2s;
+}

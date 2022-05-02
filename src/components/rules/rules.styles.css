@@ -1,0 +1,158 @@
+.rules-wrapper {
+  background: url("/src/images/rules-background.png") no-repeat center / cover
+    rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+.rules-container {
+  width: 1295px;
+  padding: 100px 0 60px;
+  margin: auto;
+}
+
+.rules-carousel-block .image-background {
+  /* background: url("/src/images/background-rule.png") no-repeat center / cover; */
+  width: 500px;
+  border: 8px solid #EA4A86;
+  position: relative;
+  overflow: hidden;
+}
+
+.rules-carousel-block img {
+  width: 608px;
+  height: 323px;
+  transition: all 0.2s;
+}
+
+.rules-wrapper button:nth-child(1)::before,
+.rules-wrapper button:nth-child(2)::before,
+.rules-wrapper button:nth-child(3)::before,
+.rules-wrapper button:nth-child(4)::before,
+.rules-wrapper button:nth-child(5)::before {
+  width: 150px;
+  height: 70px;
+  padding: 20px;
+  border: 4px solid #ea4a86;
+  transition: all 0.2s;
+  display: inline-block;
+  background-color: transparent;
+  width: 250px;
+  height: 70px;
+  font-weight: bolder;
+}
+
+.rules-wrapper button:nth-child(1)::before {
+  content: "Participate-to-Earn";
+}
+
+.rules-wrapper button:nth-child(2)::before {
+  content: "Play-to-Earn";
+}
+
+.rules-wrapper button:nth-child(3)::before {
+  content: "Staking";
+}
+
+.rules-wrapper button:nth-child(4)::before {
+  content: "DAO";
+}
+
+.rules-wrapper button:nth-child(5)::before {
+  content: "NFT";
+}
+
+.rules-wrapper button {
+  transition: all 0.2s;
+}
+
+.rules-wrapper button.active {
+  transition: all 0.2s;
+  background-color: #ea4a86 !important;
+}
+
+.rules-wrapper button.active::after {
+  background: url("/src/images/next.png") no-repeat center / cover;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+  top: auto;
+  bottom: 50px;
+  width: 5%;
+}
+
+.carousel-control-prev-icon {
+  background: url("/src/images/prev.png") no-repeat center / cover;
+  width: 39px;
+  height: 49px;
+  cursor: pointer;
+}
+
+.carousel-control-next-icon {
+  background: url("/src/images/next.png") no-repeat center / cover;
+  width: 39px;
+  height: 49px;
+  cursor: pointer;
+}
+
+.rules-container .carousel{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.rules-container .carousel-indicators {
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.rules-container .carousel-indicators [data-bs-target] {
+  opacity: 1;
+  text-indent: 0;
+  height: auto;
+  color: #FFF;
+  width: auto;
+  background-color: transparent;
+}
+
+.rules-carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: inherit;
+  width: 45%;
+  margin: auto 30px !important;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rules-carousel-caption p {
+   margin-bottom: 0;
+ }
+
+ .rules-carousel-caption h3 {
+   border-bottom: 5px solid #ea4a86;
+   padding-bottom: 15px;
+ }
+
+.carousel-fade .carousel-item {
+  transition-property: auto !important;
+}
+
+.rules-carousel-block {
+  display: flex !important;
+  justify-content: center;
+}
+
+.rules-container .carousel-control-prev, .rules-container .carousel-control-next{
+   display: none;
+}

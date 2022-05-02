@@ -1,0 +1,4 @@
+.main-background{
+   background: url('/src/images/background.jpg') no-repeat top center / cover rgba(0, 0, 0, 1);
+   height: 100vh;
+ }

@@ -1,0 +1,28 @@
+.about{
+   background: url('/src/images/about.png') no-repeat center / cover rgba(0, 0, 0, 1);
+   width: 100%;
+   height: 641px;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+}
+
+.about-container{
+   width: 45%;
+   padding-right: 10%;
+   text-align: left;
+}
+
+.about-container h2{
+   font-size: 40px;
+   line-height: 48px;
+   margin-bottom: 58px;
+   color: #EA4A86;
+}
+
+.about-container p{
+   font-size: 25px;
+   line-height: 33px;
+   font-weight: 900;
+   color: #EA4A86;
+}
